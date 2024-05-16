@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos no ano</title>
+    <title>Futebol Paranaense</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="conteudo-principal">
-      <h2 class="titulo-principal">Meus Objetivos do ano_</h2>
-      <div class="botoes">
-        <button class="botao">Cursos na Alura</button>
-        <button class="botao">Criar projetos em JavaScript</button>
-        <button class="botao">Criar um portfólio</button>
-        <button class="botao">Atualizar meu currículo</button>
-      </div>
-    </section>
-  </body>
-  </html>
-  
+    <h1>Futebol Paranaense</h1>
+    
+    <div id="content">
+        <!-- Conteúdo visível para todos -->
+        <p>Aqui você encontrará informações sobre o futebol paranaense.</p>
+    </div>
+
+    <div id="login-form">
+        <h2>Digite sua senha camarada</h2>
+        <form id="login" onsubmit="return checkPassword()">
+            <input type="password" id="password" placeholder="Senha">
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div id="restricted-content" style="display: none;">
+        <!-- Conteúdo visível apenas após o login -->
+        <h2>Futebol paranaense</h2>
+        <p>O futebol paranaense vem crescendo muito nos ultimos anos... Vale um 5,0?</p>
+        <button onclick="goToHome()">Voltar ao Início</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
